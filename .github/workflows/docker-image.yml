@@ -14,7 +14,7 @@ jobs:
     - name: Run Tests
       run: |
         echo --Running Test cases-----
-        docker-compose -d "docker-compose.yml" up
+        docker-compose -f "docker-compose.yml" -d up
         
     - name : Stop containers
       if: ${{always()}} 
