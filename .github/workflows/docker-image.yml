@@ -10,8 +10,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Build the Docker compose to build
-      run: docker-compose -f "docker-compose.yml" up -d --build
+    
     - name: Run Tests
       run: |
         echo --Running Test cases-----
